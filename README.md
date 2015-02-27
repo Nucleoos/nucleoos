@@ -1,8 +1,9 @@
 # Nucleoos
-NucleoOS - powerful business management system
+NucleoOS - Powerful Business Management System
 
 To conduct successful business management you need a reliable system that will take care of various parts of your business. Basecamp, Google Apps, Asana, Zoho, Highrise, Unfuddle, Salesforce are definitely powerful, but one-sided in some ways. NucleoOS aims at being all-inclusive cloud-based business management platform. 
-NucleoOS is a free and open source powerful business management solution with a big amount of useful features. It is written in Python programming language and also uses Django web framework. 
+
+NucleoOS is powerful business management solution with a big amount of useful features. It is written in Python programming language and also uses Django web framework. 
 
 Intuitive UI uses the best web technologies, including AJAX, dynamic filtering and JSON. NucleoOS supports all popular browsers: Chrome (5.0.x +), Firefox (2.0 +), Safari (3.0 +), Opera (9.0 +), Internet Explorer (7.0 +), iOS Safari (4.0 +). In case your preferred browser is not listed here or doesn’t support some of the advanced features, NucleoOS will still be displayed and preserve high level user experience. 
 
