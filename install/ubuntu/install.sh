@@ -10,8 +10,13 @@ sudo apt-get install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblc
 # ubuntu 12.04 see https://github.com/python-pillow/Pillow/blob/master/docs/installation.rst
 # sudo apt-get install libtiff4-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.5-dev tk8.5-dev python-tk -y
 
+wget https://raw.githubusercontent.com/Nucleoos/nucleoos/master/install/ubuntu/nginx.conf
+wget https://raw.githubusercontent.com/Nucleoos/nucleoos/master/install/ubuntu/upstart.conf
+wget https://raw.githubusercontent.com/Nucleoos/nucleoos/master/install/ubuntu/uwsgi.ini
+
 virtualenv env
 source env/bin/activate
+curl https://bootstrap.pypa.io/ez_setup.py | python
 pip install -U setuptools pip
 pip install uwsgi pylibmc
 
@@ -29,8 +34,8 @@ echo "deb http://apt.postgresql.org/pub/repos/apt/ "$(lsb_release -a | grep Code
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install postgresql-9.4 libpq-dev -y
-sudo -u postgres createuser --pwprompt treeio
-sudo -u postgres createdb treeio --owner=treeio
+sudo -u postgres createuser --pwprompt nucleoos
+sudo -u postgres createdb nucleoos --owner=nucleoos
 pip install psycopg2
 cd treeio
 python manage.py collectstatic --noinput
